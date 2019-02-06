@@ -5,6 +5,8 @@ import ExampleWork from './example-work';
 const myWork = [
   {
     'title': "Case Heureka",
+    'href': "https://example.com",
+    'desc': "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     'image': {
       'desc': "example sprite of the balloonwalker",
       'src': "images/balloonwalk.png",
@@ -13,6 +15,8 @@ const myWork = [
   },
   {
     'title': "Case Akseli Gallen-Kallela",
+    'href': "https://example.com",
+    'desc': "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     'image': {
       'desc': "back of the artwork card",
       'src': "images/teos.jpg",
@@ -21,6 +25,8 @@ const myWork = [
   },
   {
     'title': "Gif testing for friends",
+    'href': "https://example.com",
+    'desc': "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     'image': {
       'desc': "test gif",
       'src': "images/discotesting3.gif",
