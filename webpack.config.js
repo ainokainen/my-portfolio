@@ -1,21 +1,38 @@
 const path = require('path');
 
 module.exports = {
-  entry: './js/main.js',
+  entry: './src/index.js',
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js'
   },
   module: {
-    rules:[{
+    rules:[
+      {
       test: /\.js$/,
       exclude: /node_modules/,
       use: {
         loader: 'babel-loader',
         options: {
           presets: ['react']
+          }
         }
-      }
-    }]
-  }
-}
+      },{
+      test: /\.(jpg|png|gif|svg|ico)$/i,
+        use: [{
+          loader: "file-loader",
+          options: {
+            name: '[path][name].[ext]'
+          },
+        },
+      ],
+      },{
+      test: /\.css$/,
+        use: [
+          {loader: 'style-loader'},
+          {loader: 'css-loader'}
+        ],
+      },
+    ],
+  },
+};

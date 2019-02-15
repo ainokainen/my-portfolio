@@ -1,0 +1,4 @@
+.center-everything {
+  display: flex;
+  flex-direction: column;
+}

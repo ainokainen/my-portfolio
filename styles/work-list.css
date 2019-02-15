@@ -1,0 +1,40 @@
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  background-color: blue;
+  width: auto;
+  padding: 1em;
+}
+
+.leftside {
+  flex-direction: row;
+  align-items: flex-start;
+  width: 45%;
+  height: 45%;
+}
+
+.rightside {
+  flex-direction: row;
+  margin-left: auto;
+  width: 45%;
+  height: 45%;
+}
+
+.text-leftside {
+  flex-direction: column;
+  margin-left: auto;
+  font-size: 150%;
+  align-content: center;
+  padding: 2em;
+}
+
+.text-rightside {
+  flex-direction: column;
+  align-self: auto;
+  font-size: 150%;
+  align-content: center;
+  padding: 2em;
+}
+.img {
+  margin:1em;
+}
