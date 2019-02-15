@@ -6,10 +6,10 @@ class AboutMe extends Component {
 
     return (
       <section>
-        About me
+        About me, here should be some text about me
       </section>
     )
   }
 }
 
-+export default AboutMe;
+export default AboutMe;
