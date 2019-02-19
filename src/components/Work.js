@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import WorkModal from './Workmodal';
+import WorkModal from './WorkModal';
 import WorkBubble from './WorkBubble';
 
 class Work extends Component {

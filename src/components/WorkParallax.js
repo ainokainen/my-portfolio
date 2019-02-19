@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import WorkModal from './Workmodal';
 import WorkBubbleParallax from './WorkBubbleParallax';
 import {Controller, Scene} from 'react-scrollmagic';
 import neppisplacement from '../../images/neppisplacement.png';
@@ -53,10 +52,6 @@ class WorkParallax extends Component {
 
            </section>
 
-           <WorkModal
-            example = {this.state.selectedExample}
-            open = {this.state.modalOpen}
-            close = {this.closeModal}/>
           </span>
        );
      }
