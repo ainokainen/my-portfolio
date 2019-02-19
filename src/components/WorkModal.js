@@ -4,7 +4,7 @@ class WorkModal extends Component {
 
   render () {
     const { example, close, open } = this.props;
-    let modalClass =open ? 'modal--open':'modal--closed';
+    let modalClass = open ? 'modal--open':'modal--closed';
 
     return (
       <div className={"background--skyBlue " + modalClass}>
