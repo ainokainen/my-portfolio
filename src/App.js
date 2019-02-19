@@ -6,6 +6,7 @@ import MainImage from '../src/components/MainImage'
 import Work from '../src/components/Work'
 import WorkList from '../src/components/WorkList'
 import CoverLetter from '../src/components/CoverLetter'
+import WorkParallax from '../src/components/WorkParallax'
 
 import '../styles/main.css'
 const myWork = [
@@ -48,6 +49,7 @@ const App = () => (
     <WorkList/>
     <Work work={myWork}/>
     <CoverLetter/>
+    <WorkParallax work={myWork}/>
   </section>
 )
 export default App;
