@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import WorkModal from './Workmodal';
 import WorkBubble from './WorkBubble';
- //import '../../styles/work-bubbles.css';
 
 class Work extends Component {
    constructor(props) {

@@ -1,12 +1,12 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 
-import Nav from '../src/components/Nav'
-import MainImage from '../src/components/MainImage'
-import Work from '../src/components/Work'
-import WorkList from '../src/components/WorkList'
-import CoverLetter from '../src/components/CoverLetter'
-import WorkParallax from '../src/components/WorkParallax'
+import Nav from './components/Nav'
+import MainImage from './components/MainImage'
+import Work from './components/Work'
+import WorkList from './components/WorkList'
+import CoverLetter from './components/CoverLetter'
+import WorkParallax from './components/WorkParallax'
 
 import '../styles/main.css'
 const myWork = [
