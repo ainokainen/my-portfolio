@@ -28,6 +28,10 @@
   color: rgb(52, 152, 219);
 }
 
+.color--darkBlue {
+  color: rgb(135,247,223);
+}
+
 .color--cloud {
   color: rgb(236, 240, 241);
 }
@@ -57,6 +61,7 @@ html {
 body {
   font-family: 'Questrial';
   margin: 0;
+  position: absolute;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -140,7 +145,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .section__exampleWrapper {
-  margin-right: 2rem;
+  margin-right: 3rem;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
 }
 
 .section__example {
@@ -157,35 +164,48 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .section__exampleTitle{
-  font-size: 3.4rem;
+  font-size: 4rem;
   text-align: center;
   text-transform: uppercase;
   width: 90%;
+  text-shadow: 2px 2px 4px darkBlue;
 }
 
 .section__exampleImage {
-  opacity: 0.25;
-  width: 100%;
+  opacity: 0.6;
+  object-fit: cover;
+  overflow: hidden;
+  position: relative;
+  height: 35rem;
+  min-width: 35rem;
+  display: inline;
 }
 
 /*
   Header
 */
-
+.header--flex {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+}
 .section__heading--largest {
-  float: left;
-  font-size: 5rem;
+  align-self: baseline;
+  font-size: 6rem;
   margin-left: 2rem;
 }
 
 .section--social {
-  float: right;
-  line-height: 10rem;
-  margin-right: 2rem;
+  align-self: baseline;
+  line-height: 5rem;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
 }
 
 .social {
-  margin-right: 0.75rem;
+  margin-right: 1rem;
 }
 
 .socialWrapper:last-child .social {
@@ -194,9 +214,20 @@ h1, h2, h3, h4, h5, h6 {
 
 .socialWrapper {
   display: inline-block;
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
+@media only screen and (max-width: 480px) {
+  .header--flex {
+    flex-direction: column-reverse;
+    flex: 100%;
+    align-content: flex-start;
+  }
+  .section--social {
+    align-self: flex-end;
+    margin-right: 1em;
+  }
+}
 
 /*
   Modal
@@ -214,8 +245,19 @@ h1, h2, h3, h4, h5, h6 {
   left: 0;
   bottom: 0;
   width: 100%;
-  height: 100%;
+  height:100%;
   z-index: 100;
+  overflow-y: auto;
+}
+
+.modal--open__scroll {
+  position: relative;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 101;
 }
 
 .modal__closeButton {
@@ -224,7 +266,7 @@ h1, h2, h3, h4, h5, h6 {
   top: 5rem;
   font-size: 4rem;
   z-index: 1;
-  curson: pointer;
+  cursor: pointer;
 }
 
 .modal__text {
@@ -233,7 +275,7 @@ h1, h2, h3, h4, h5, h6 {
   left: 0;
   font-size: 2.4rem;
   padding: 2rem;
-  width: 66%;
+  width: 100%;
 }
 
 .modal__link {
@@ -245,5 +287,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .modal__image {
-  opacity: 0.2;
+  opacity: 0.5;
+  object-fit: cover;
+  width: 100%;
+  object-position: center;
+}
+
+.modal__gallery {
+  margin: 1rem;
+  max-width:100%;
+  max-height: 20rem;
 }

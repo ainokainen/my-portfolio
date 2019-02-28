@@ -1,40 +1,52 @@
+.bg-color {
+  background-color: rgb(9, 23, 48);
+}
+
 .flex-container {
   display: flex;
   flex-direction: row;
-  background-color: blue;
   width: auto;
   padding: 1em;
+  justify-content: space-around;
+  background-color: rgb(9, 23, 48);
+  color:  rgb(236, 240, 241);
 }
 
 .leftside {
   flex-direction: row;
   align-items: flex-start;
-  width: 45%;
-  height: 45%;
+  justify-content: center;
+  margin-top: 3rem;
 }
 
 .rightside {
   flex-direction: row;
   margin-left: auto;
-  width: 45%;
-  height: 45%;
+  justify-content: center;
 }
 
 .text-leftside {
   flex-direction: column;
   margin-left: auto;
   font-size: 150%;
-  align-content: center;
-  padding: 2em;
+  justify-content: center;
+  text-align: center;
+  padding: 4em;
 }
 
 .text-rightside {
   flex-direction: column;
   align-self: auto;
   font-size: 150%;
-  align-content: center;
-  padding: 2em;
+  justify-content: center;
+  text-align: center;
+  padding: 4em;
 }
-.img {
-  margin:1em;
+
+.image-cropper {
+  object-fit: cover;
+  overflow: hidden;
+  position: relative;
+  border-radius: 50%;
+  cursor: pointer;
 }
