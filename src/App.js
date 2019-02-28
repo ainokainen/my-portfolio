@@ -5,8 +5,9 @@ import Nav from './components/Nav'
 import MainImage from './components/MainImage'
 import Work from './components/Work'
 import WorkList from './components/WorkList'
+
+import MyWork from './components/MyWork'
 import CoverLetter from './components/CoverLetter'
-import WorkParallax from './components/WorkParallax'
 
 import '../styles/main.css'
 const myWork = [
@@ -46,10 +47,8 @@ const App = () => (
   <section>
     <Nav />
     <MainImage/>
-    <WorkList/>
-    <Work work={myWork}/>
+    <MyWork/>
     <CoverLetter/>
-    <WorkParallax work={myWork}/>
   </section>
 )
 export default App;

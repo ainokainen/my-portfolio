@@ -6,7 +6,7 @@ class Nav extends Component {
   render() {
 
     return (
-      <header className="overflow--auto">
+      <header className="header--flex">
         <h1 className="color--skyBlue section__heading--largest">
           Ainonlainen
         </h1>

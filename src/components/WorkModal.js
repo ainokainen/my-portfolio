@@ -1,17 +1,30 @@
 import React, {Component} from 'react';
+import '../../styles/modal-gallery.css';
 
 class WorkModal extends Component {
+
+  renderImage(gallerysrc) {
+    return <div className='tile'>
+      <img
+        className="img"
+        src={gallerysrc}/>
+    </div>
+  }
 
   render () {
     const { example, close, open } = this.props;
     let modalClass = open ? 'modal--open':'modal--closed';
 
+
+    console.log(this.props.example.gallery.gallerysrc + 'modaalista');
+
     return (
+      <div>
       <div className={"background--skyBlue " + modalClass}>
-        <span className="color--cloud modal__closeButton"
+        <div className="color--cloud modal__closeButton"
           onClick={() => close()}>
           <i className="fa fa-window-close-o"></i>
-        </span>
+        </div>
 
         <img alt={example.image.desc}
              className="modal__image"
@@ -27,9 +40,15 @@ class WorkModal extends Component {
           <p className="modal__description">
             {example.desc}
           </p>
+          <p className="modal__description">
+          {example.addtext}</p>
+            <div className='tiles'>
+              {this.props.example.gallery.gallerysrc.map(gallerysrc =>
+                this.renderImage(gallerysrc))}
+            </div>
+          </div>
         </div>
       </div>
-
     )
   };
 };

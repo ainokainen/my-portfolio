@@ -12,16 +12,15 @@ class MainImage extends Component {
           Portfolio
         </h2>
         <p className="color--cloud margin--none section__text--left--p">
-          This is my AWS serverless portfolio made with:
+          <h3>Serverless portfolio made with:</h3>
 
           HTML, CSS, React.js, Python, npm, Jest, Webpack,
-
           Babel and GitHub
-
-          AWS:
-
-          Route53, CloudFront, S3,CodeBuild, CodePipeline, SNS
-
+          <br/>
+          <h3>AWS:</h3>
+          Route53, CloudFront, S3, CodeBuild, CodePipeline and SNS.
+          <br/>
+          <h3>Site content:</h3>
           This portfolio displays some of my graphic design projects.
         </p>
       </section>

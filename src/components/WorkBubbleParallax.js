@@ -6,7 +6,6 @@ class WorkBubbleParallax extends Component {
   render() {
     const {example, openModal} = this.props;
     return(
-      <Scene duration={300} pin={true}>
       <div className="section__exampleWrapper"
         onClick={ (evt) => this.props.openModal(evt, example) }>
 
@@ -23,9 +22,7 @@ class WorkBubbleParallax extends Component {
           </dl>
 
         </div>
-
       </div>
-      </Scene>
     )
   }
 };
