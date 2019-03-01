@@ -4,10 +4,11 @@ import '../../styles/modal-gallery.css';
 class WorkModal extends Component {
 
   renderImage(gallerysrc) {
-    return <div className='tile'>
+    return <div className='modal__tile'>
+      <div className='tooltip'>{gallerysrc.tooltip}</div>
       <img
-        className="img"
-        src={gallerysrc}/>
+        className="modal__img"
+        src={gallerysrc.gallimg}/>
     </div>
   }
 
@@ -21,13 +22,13 @@ class WorkModal extends Component {
     return (
       <div>
       <div className={"background--skyBlue " + modalClass}>
-        <div className="color--cloud modal__closeButton"
+        <span className="color--cloud modal__closeButton"
           onClick={() => close()}>
           <i className="fa fa-window-close-o"></i>
-        </div>
+        </span>
 
         <img alt={example.image.desc}
-             className="modal__image"
+             className="modal__bg--image"
              src={example.image.src}/>
         <div className="color--cloud modal__text">
           <h2 className="modal__title">
@@ -42,7 +43,7 @@ class WorkModal extends Component {
           </p>
           <p className="modal__description">
           {example.addtext}</p>
-            <div className='tiles'>
+            <div className='modal__tiles'>
               {this.props.example.gallery.gallerysrc.map(gallerysrc =>
                 this.renderImage(gallerysrc))}
             </div>

@@ -14,15 +14,64 @@ const myWork = [
     },
     'addtext':"Stuff about the project",
     'gallery': {
-      'gallerysrc':[ "images/balloonwalk.png",
-                      "images/dreamcityconcept.jpg",
-                      "images/neppisplacement.png",
-                      "images/balcony.png",
-                      "images/bicycle.png",
-                      "images/candy.png",
-                      "images/circus.png",
-                      "images/florist.png"
-                  ]
+      'gallerysrc':[
+        {
+          'gallimg': "images/HeurekaInAction.jpg",
+          'tooltip': "Installation in place"
+        },
+        {
+          'gallimg': "images/balloonwalk.png",
+          'tooltip': "Sprite for girl with a balloon"
+        },
+        {
+          'gallimg': "images/dreamcityconcept.jpg",
+          'tooltip': "Concept image for mood"
+        },
+        {
+          'gallimg':"images/neppisplacement.png",
+          'tooltip': "Car model"
+        },
+        {
+          'gallimg':"images/balcony.png",
+          'tooltip': "Texture for a living quarters"
+        },
+        {
+          'gallimg':"images/bicycle.png",
+          'tooltip': "Texture for a living quarters"
+        },
+        {
+          'gallimg':"images/lemonadestands.png",
+          'tooltip': "Changing roof elements"
+        },
+        {
+          'gallimg':"images/movie.png",
+          'tooltip': "Texture for a movie theatre"
+        },
+        {
+          'gallimg':"images/candy.png",
+          'tooltip': "Texture for a candy store"
+        },
+        {
+          'gallimg':"images/circus.png",
+          'tooltip': "Texture for a circus"
+        },
+        {
+          'gallimg':"images/florist.png",
+          'tooltip': "Texture for a florist"
+        },
+        {
+          'gallimg':"images/nukkumattitext.png",
+          'tooltip': "Texture for a living quarters"
+        },
+        {
+          'gallimg':"images/towers.png",
+          'tooltip': "Texture for a living quarters"
+        },
+        {
+          'gallimg':"images/toyshop.png",
+          'tooltip': "Texture for a toyshop"
+        },
+      ]
     },
   },
   {
@@ -36,10 +85,20 @@ const myWork = [
     },
     'addtext':"Stuff about the project",
     'gallery': {
-      'gallerysrc': ["images/fiskars.jpg",
-                      "images/tarransijoittelu2.jpg",
-                      "images/propo2.jpg"
-                    ]
+      'gallerysrc': [
+        {
+          'gallimg': "images/fiskars.jpg",
+          'tooltip': "Painted sign in place"
+        },
+        {
+          'gallimg': "images/tarransijoittelu2.jpg",
+          'tooltip': "Poster for TT13"
+        },
+        {
+          'gallimg': "images/propo2.jpg",
+          'tooltip': "Proposal for a new sign"
+        },
+      ]
     },
   },
   {
@@ -53,11 +112,28 @@ const myWork = [
     },
     'addtext':"Stuff about the project",
     'gallery': {
-      'gallerysrc': ["images/flying2.jpg",
-                      "images/redfirstdraft.jpg",
-                      "images/firstbug.jpg",
-                      "images/redcanyonlaakso.jpg"
-                    ]
+      'gallerysrc': [
+        {
+          'gallimg': "images/flying2.jpg",
+          'tooltip': "Concept design for a flying enemy"
+        },
+        {
+          'gallimg': "images/redfirstdraft.jpg",
+          'tooltip': "Concept design fo environment"
+        },
+        {
+          'gallimg': "images/firstbug.jpg",
+          'tooltip': "Concept design for an enemy"
+        },
+        {
+          'gallimg': "images/scorpbug3.jpg",
+          'tooltip': "Concept design for an enemy"
+        },
+        {
+          'gallimg': "images/redcanyonlaakso.jpg",
+          'tooltip': "Mood exploring for the environment"
+        },
+      ]
     },
   },
   {
@@ -71,17 +147,43 @@ const myWork = [
     },
     'addtext':"Stuff about the project",
     'gallery': {
-      'gallerysrc': ["images/esine.jpg",
-                      "images/paikka.jpg",
-                      "images/toimi.jpg",
-                      "images/teos.jpg",
-                      "images/discotesting3.gif"
-                    ]
+      'gallerysrc': [
+        {
+          'gallimg': "images/angelframe1.png",
+          'tooltip': "Experimenting with Alchemy"
+        },
+        {
+          'gallimg': "images/esine.jpg",
+          'tooltip': "Back of AKG-card deck"
+        },
+        {
+          'gallimg': "images/paikka.jpg",
+          'tooltip': "Back of AKG-card deck"
+        },
+        {
+          'gallimg': "images/toimi.jpg",
+          'tooltip': "Back of AKG-card deck"
+        },
+        {
+          'gallimg': "images/teos.jpg",
+          'tooltip': "Back of AKG-card deck"
+        },
+        {
+          'gallimg': "images/hanging.jpg",
+          'tooltip': "Photoshop study"
+        },
+        {
+          'gallimg': "images/discotesting3.gif",
+          'tooltip': "Gif testing for fun"
+        },
+      ]
     },
-  }
+  },
 ]
 
 const MyWork = () => (
-  <WorkList work={myWork}/>
+  <section>
+    <WorkList work={myWork}/>
+  </section>
 )
 export default MyWork;
