@@ -6,18 +6,17 @@ class WorkModal extends Component {
   renderImage(gallerysrc) {
     return <div className='modal__tile'>
       <div className='tooltip'>{gallerysrc.tooltip}</div>
+      <a href={gallerysrc.gallimg} target='_blank'>
       <img
         className="modal__img"
         src={gallerysrc.gallimg}/>
+        </a>
     </div>
   }
 
   render () {
     const { example, close, open } = this.props;
     let modalClass = open ? 'modal--open':'modal--closed';
-
-
-    console.log(this.props.example.gallery.gallerysrc + 'modaalista');
 
     return (
       <div>
@@ -34,10 +33,6 @@ class WorkModal extends Component {
           <h2 className="modal__title">
             {example.title}
           </h2>
-          <a className="color--skyBlue modal__link"
-             href={example.href}>
-            Check it out
-          </a>
           <p className="modal__description">
             {example.desc}
           </p>
